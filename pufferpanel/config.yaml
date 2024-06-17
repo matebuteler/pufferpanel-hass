@@ -1,0 +1,16 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: PufferPanel
+version: "1.0.0"
+slug: pufferpanel
+description: Panel for hosting different containerized gameservers
+url: "https://github.com/matebuteler/pufferpanel-hass/tree/main/example"
+arch:
+  - aarch64
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+image: "ghcr.io/oskardotglobal/pufferpanel:${ARCH}"
